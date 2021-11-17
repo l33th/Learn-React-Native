@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>My first native app!</Text>
+      <Text numberOfLines={1}>My first native app! adkljfldfjdhgljkdhkldsjsdjf;ojd;of;osdjf;lsdjf;sjdfoisjdfohdhfhfiojeojha;ojrioj;ojfz </Text>
       <StatusBar style="auto" />
     </SafeAreaView>
   );
