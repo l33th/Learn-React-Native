@@ -17,7 +17,7 @@ export default function App() {
           width: 200,
           height: 300,
           uri: 'https://picsum.photos/200/300'}} />
-          <View style={{width: 200, height: 70, backgroundColor: 'dodgerblue'}}><Text>dodgerblue</Text></View>
+          <View style={{width: 200, height: 70, backgroundColor: 'dodgerblue'}}></View>
       </TouchableNativeFeedback>
     </SafeAreaView>
   );
