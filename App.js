@@ -3,10 +3,9 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+  let x = 1;
   // this console log is just for during development
   console.log('App Executed.');
-  let x;
-  x.toString();
   return (
     <View style={styles.container}>
       <Text>My first native app!</Text>
