@@ -1,14 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, TouchableHighlight, View, Image, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, TouchableNativeFeedback, View, Image, SafeAreaView } from 'react-native';
 
 export default function App() {
-  const handlePress = () => console.log('Text pressed');
+  const handleTextPress = () => console.log('Text pressed');
+  const handleImagePress = () => console.log('image tapped');
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text numberOfLines={1} onPress={handlePress}>Generate Random Image</Text>
-      <TouchableHighlight onPress={() => console.log('image tapped')}>
+      <Text numberOfLines={1} onPress={handleTextPress}>Generate Random Image</Text>
+      <TouchableNativeFeedback onPress={handleImagePress}>
         <Image 
         blurRadius={1} 
         fadeDuration={1000}
@@ -16,7 +17,8 @@ export default function App() {
           width: 200,
           height: 300,
           uri: 'https://picsum.photos/200/300'}} />
-      </TouchableHighlight>
+          <View style={{width: 200, height: 70, backgroundColor: 'dodgerblue'}}><Text>dodgerblue</Text></View>
+      </TouchableNativeFeedback>
     </SafeAreaView>
   );
 }
