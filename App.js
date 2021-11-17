@@ -8,7 +8,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Text numberOfLines={1} onPress={handlePress}>Generate Random Image</Text>
-      <Image source={{ 
+      <Image blurRadius={2} source={{ 
         width: 200,
         height: 300,
         uri: 'https://picsum.photos/200/300'}} />
