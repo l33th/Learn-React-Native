@@ -1,11 +1,12 @@
 import React from 'react';
 import { Dimensions, StyleSheet, SafeAreaView, Button, Platform, StatusBar, View } from 'react-native';
-import { useDimensions } from '@react-native-community/hooks';
+import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
 
 export default function App() {
   const buttonPressed = () => console.log('button pressed');
   console.log(Dimensions.get('screen'))
   console.log(useDimensions())
+  console.log(useDeviceOrientation())
 
   return (
     <SafeAreaView style={styles.container}>
