@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, SafeAreaView, Button } from 'react-native';
 
 export default function App() {
-  const buttonPressed = () => console.log('button pressed');
+  const buttonPressed = () => alert('button tapped');
 
   return (
     <SafeAreaView style={styles.container}>
