@@ -4,14 +4,12 @@ import { useDimensions, useDeviceOrientation } from '@react-native-community/hoo
 
 export default function App() {
   const buttonPressed = () => console.log('button pressed');
-  console.log(Dimensions.get('screen'))
-  console.log(useDimensions())
-  console.log(useDeviceOrientation())
+  const {landscape} =  useDeviceOrientation();
 
   return (
     <SafeAreaView style={styles.container}>
       <Button color='purple' title='Click me' onPress={buttonPressed} />
-      <View style={{backgroundColor: 'dodgerblue', width: '100%', height: '30%'}}></View>
+      <View style={{backgroundColor: 'dodgerblue', width: '100%', height: landscape ? '100%' : '30%',}}></View>
     </SafeAreaView>
   );
 }
