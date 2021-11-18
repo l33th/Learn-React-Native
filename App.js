@@ -1,9 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, SafeAreaView, Button } from 'react-native';
+import { StyleSheet, SafeAreaView, Button, Alert } from 'react-native';
 
 export default function App() {
-  const buttonPressed = () => alert('button tapped');
+  const buttonPressed = () => Alert.alert('My title', 'My message', [
+    {text: 'Yes', onPress: () => console.log('Yes')},
+    {text: 'No', onPress: () => console.log('No')}
+  ]);
 
   return (
     <SafeAreaView style={styles.container}>
