@@ -6,7 +6,7 @@ export default function App() {
   const buttonPressed = () => Alert.prompt('My title', 'My message', (text) => console.log(text));
 
   return (
-    <SafeAreaView style={containerStyle}>
+    <SafeAreaView style={[styles.container, containerStyle]}>
       <Button color='purple' title='Click me' onPress={buttonPressed} />
     </SafeAreaView>
   );
