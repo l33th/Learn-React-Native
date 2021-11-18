@@ -3,10 +3,11 @@ import React from 'react';
 import { StyleSheet, SafeAreaView, Button } from 'react-native';
 
 export default function App() {
+  const buttonPressed = () => console.log('button pressed');
 
   return (
     <SafeAreaView style={styles.container}>
-      <Button title='Click me' />
+      <Button title='Click me' onPress={buttonPressed} />
     </SafeAreaView>
   );
 }
