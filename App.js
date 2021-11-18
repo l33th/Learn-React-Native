@@ -1,14 +1,16 @@
 import React from 'react';
 import { Dimensions, StyleSheet, SafeAreaView, Button, Platform, StatusBar, View } from 'react-native';
+import { useDimensions } from '@react-native-community/hooks';
 
 export default function App() {
   const buttonPressed = () => console.log('button pressed');
   console.log(Dimensions.get('screen'))
+  console.log(useDimensions())
 
   return (
     <SafeAreaView style={styles.container}>
       <Button color='purple' title='Click me' onPress={buttonPressed} />
-      <View style={{backgroundColor: 'dodgerblue', width: '50%', height: 70}}></View>
+      <View style={{backgroundColor: 'dodgerblue', width: '100%', height: '30%'}}></View>
     </SafeAreaView>
   );
 }
