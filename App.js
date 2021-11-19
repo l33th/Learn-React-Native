@@ -30,7 +30,7 @@ export default function App() {
           // bottom: -20,
           left: 20,
           // right: -20,
-          position: 'absolute',
+          position: 'relative',
         }}
       />
       <View
