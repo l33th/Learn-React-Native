@@ -8,7 +8,8 @@ export default function App() {
         backgroundColor: '#fff',
         flex: 1,
         flexDirection: 'row', // horizontal
-        justifyContent: 'space-between', // main
+        justifyContent: 'center', // main
+        alignItems: 'center',
       }}
     >
       <View
