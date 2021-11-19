@@ -9,11 +9,11 @@ export default function App() {
         flex: 1,
         flexDirection: 'row', // horizontal
         justifyContent: 'center', // main
-        alignItems: 'flex-start',
+        alignItems: 'stretch',
       }}
     >
       <View
-        style={{ backgroundColor: 'dodgerblue', width: 100, height: 300 }}
+        style={{ backgroundColor: 'dodgerblue', width: 100 /*height: 300*/ }}
       />
       <View style={{ backgroundColor: 'gold', width: 100, height: 200 }} />
       <View style={{ backgroundColor: 'tomato', width: 100, height: 100 }} />
