@@ -9,7 +9,7 @@ export default function App() {
         flex: 1,
         flexDirection: 'row', // horizontal
         justifyContent: 'center', // main
-        alignItems: 'flex-end',
+        alignItems: 'flex-start',
       }}
     >
       <View
