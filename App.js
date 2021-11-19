@@ -7,8 +7,8 @@ export default function App() {
       style={{
         backgroundColor: '#fff',
         flex: 1,
-        flexDirection: 'row',
-        justifyContent: 'center',
+        flexDirection: 'row', // horizontal
+        justifyContent: 'flex-end', // main
       }}
     >
       <View
