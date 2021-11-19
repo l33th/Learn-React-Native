@@ -26,10 +26,11 @@ export default function App() {
           backgroundColor: 'gold',
           width: 100,
           height: 100,
-          top: -20,
+          top: 20,
           // bottom: -20,
-          // left: -20,
+          left: 20,
           // right: -20,
+          position: 'absolute',
         }}
       />
       <View
